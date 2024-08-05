@@ -41,6 +41,16 @@ Not all features are implemented for all MCUs, following is supported MCUs and i
 
 Following is generic compiling information. Each port may require extra set-up and slight different process e.g esp32s2 require setup IDF.
 
+### Clone
+
+Clone this repo with its submodule
+
+```
+$ git clone git@github.com:adafruit/tinyuf2.git tinyuf2
+$ cd tinyuf2
+$ git submodule update --init
+```
+
 ### Compile
 
 To build this for a specific board, we need to change current directory to its port folder
@@ -49,10 +59,11 @@ To build this for a specific board, we need to change current directory to its p
 $ cd ports/stm32f4
 ```
 
-Firstly we need to get all of submodule dependency for our board e.g mcu driver with `get-deps` target. You only need to do this once for each mcu family
+Firstly we need to get all submodule dependency for our board using `tools/get_deps.py` script with either family input or using --board option. You only need to do this once for each family
 
 ```
-make BOARD=feather_stm32f405_express get-deps
+python tools/get_deps.py stm32f4
+python tools/get_deps.py --board feather_stm32f405_express
 ```
 
 Then compile with `all` target:
