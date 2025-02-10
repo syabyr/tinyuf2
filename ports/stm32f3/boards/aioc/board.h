@@ -29,8 +29,8 @@
 // LED
 //--------------------------------------------------------------------+
 
-#define LED_PORT              GPIOE
-#define LED_PIN               GPIO_PIN_10
+#define LED_PORT              GPIOB
+#define LED_PIN               GPIO_PIN_8
 #define LED_STATE_ON          1
 
 //#define BUTTON_PORT           GPIOA
