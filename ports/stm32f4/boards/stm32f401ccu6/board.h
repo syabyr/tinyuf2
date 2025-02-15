@@ -65,7 +65,7 @@
 
 #define UF2_PRODUCT_NAME  USB_MANUFACTURER " " USB_PRODUCT
 #define UF2_BOARD_ID      "STM32F401CCU6"
-#define UF2_VOLUME_LABEL  "STM32F401CC"
+#define UF2_VOLUME_LABEL  "STMF401BOOT"
 #define UF2_INDEX_URL     "https://stm32-base.org/boards/STM32F411CEU6-WeAct-Black-Pill-V2.0.html"
 
 #define USB_NO_VBUS_PIN   1
