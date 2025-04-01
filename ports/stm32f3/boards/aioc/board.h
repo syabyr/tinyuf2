@@ -33,6 +33,10 @@
 #define LED_PIN               GPIO_PIN_8
 #define LED_STATE_ON          1
 
+#define LED_PORT2            GPIOB
+#define LED_PIN2             GPIO_PIN_9
+#define LED_STATE_ON2        1
+
 //#define BUTTON_PORT           GPIOA
 //#define BUTTON_PIN            GPIO_PIN_0
 //#define BUTTON_STATE_ACTIVE   1

@@ -81,6 +81,17 @@ void board_init(void)
   board_led_write(0);
   #endif
 
+  #ifdef LED_PIN2
+  GPIO_InitStruct.Pin = LED_PIN2;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+  HAL_GPIO_Init(LED_PORT2, &GPIO_InitStruct);
+
+  HAL_GPIO_WritePin(LED_PORT2, LED_PIN2, LED_STATE_ON);
+  #endif
+
+
   #if NEOPIXEL_NUMBER
   GPIO_InitStruct.Pin = NEOPIXEL_PIN;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
