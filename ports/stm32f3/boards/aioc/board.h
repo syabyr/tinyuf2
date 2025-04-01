@@ -66,11 +66,11 @@
 // TODO VID/PID aren't assigned for this board
 #define USB_VID           0xcafe
 #define USB_PID           0xffff
-#define USB_MANUFACTURER  "MYBAYS"
-#define USB_PRODUCT       "AIOC"
+#define USB_MANUFACTURER  "AIOC"
+#define USB_PRODUCT       "AIOC Board"
 
 #define UF2_PRODUCT_NAME  USB_MANUFACTURER " " USB_PRODUCT
-#define UF2_BOARD_ID      "MYBAYS-AIOC-v1"
+#define UF2_BOARD_ID      "AIOCSTM32F3"
 #define UF2_VOLUME_LABEL  "AIOCBOOT"
 #define UF2_INDEX_URL     "https://github.com/skuep/AIOC"
 

@@ -6,7 +6,7 @@ SRC_S += \
   $(ST_CMSIS)/Source/Templates/gcc/startup_stm32f302xc.s
 
 # For flash-jlink target
-JLINK_DEVICE = stm32f302vc
+JLINK_DEVICE = stm32f302cc
 
 flash: flash-stlink
 erase: erase-stlink
