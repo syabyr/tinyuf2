@@ -54,6 +54,8 @@
 #define BOARD_FLASH_SIZE      (256 * 1024)
 #define BOARD_FLASH_SECTORS   6
 
+#define BOARD_FLASH_APP_START 0x08004000
+//#define TINYUF2_PROTECT_BOOTLOADER 0
 //--------------------------------------------------------------------+
 // USB UF2
 //--------------------------------------------------------------------+
